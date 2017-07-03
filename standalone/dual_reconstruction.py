@@ -23,12 +23,12 @@ import numpy as np
 
 from scipy.cluster.vq import kmeans, vq
 
-from openalea.container.array_dict import array_dict
-from openalea.container.property_topomesh import PropertyTopomesh
-from openalea.mesh.property_topomesh_analysis import *
-from openalea.mesh.utils.intersection_tools import inside_triangle, intersecting_segment, intersecting_triangle
-from openalea.mesh.utils.geometry_tools import triangle_geometric_features
-from openalea.mesh.property_topomesh_optimization import topomesh_triangle_split
+from array_dict import array_dict
+from property_topomesh import PropertyTopomesh
+from property_topomesh_analysis import *
+from intersection_tools import inside_triangle, intersecting_segment, intersecting_triangle
+from geometry_tools import triangle_geometric_features
+from property_topomesh_optimization import topomesh_triangle_split
 
 from time import time, sleep
 

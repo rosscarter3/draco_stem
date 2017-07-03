@@ -33,12 +33,16 @@ from copy import deepcopy
 
 
 def evaluate_topomesh_quality(topomesh,
-                              quality_criteria=["Mesh Complexity", "Triangle Area Deviation", "Triangle Eccentricity",
-                                                "Cell Volume Error", "Vertex Distance", "Cell Convexity",
-                                                "Epidermis Cell Angle", "Vertex Valence", "Cell 2 Adjacency"],
+                              quality_criteria=["Mesh Complexity",
+                                                "Triangle Area Deviation",
+                                                "Triangle Eccentricity",
+                                                "Cell Volume Error",
+                                                "Vertex Distance",
+                                                "Cell Convexity",
+                                                "Epidermis Cell Angle",
+                                                "Vertex Valence",
+                                                "Cell 2 Adjacency"],
                               image=None, image_cell_vertex=None, image_labels=None, image_cell_volumes=None, **kwargs):
-    """
-    """
 
     quality_data = {}
 

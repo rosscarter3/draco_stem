@@ -32,11 +32,12 @@ from copy import deepcopy
 from time import time
 
 
-def optimize_topomesh(input_topomesh, omega_forces={'regularization': 0.00, 'laplacian': 1.0, 'planarization': 0.27,
-                                                    'epidermis_planarization': 0.07}, omega_regularization_max=None,
+def optimize_topomesh(input_topomesh, omega_forces={'regularization': 0.00,
+                                                    'laplacian': 1.0,
+                                                    'planarization': 0.27,
+                                                    'epidermis_planarization': 0.07},
+                      omega_regularization_max=None,
                       iterations=20, edge_flip=False, **kwargs):
-    """
-    """
 
     topomesh = deepcopy(input_topomesh)
 

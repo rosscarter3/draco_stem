@@ -34,14 +34,14 @@ from openalea.mesh.property_topomesh_creation import vertex_topomesh, edge_topom
 
 from openalea.mesh.utils.tissue_analysis_tools import cell_vertex_extraction
 
-from openalea.draco_stem.draco.adjacency_complex_optimization import delaunay_tetrahedrization_topomesh, \
+from adjacency_complex_optimization import delaunay_tetrahedrization_topomesh, \
     clean_tetrahedrization, compute_tetrahedrization_geometrical_properties, triangles_from_adjacency_edges
-from openalea.draco_stem.draco.adjacency_complex_optimization import tetrahedrization_topomesh_topological_optimization, \
+from adjacency_complex_optimization import tetrahedrization_topomesh_topological_optimization, \
     tetrahedrization_topomesh_add_exterior, tetrahedrization_topomesh_remove_exterior
-from openalea.draco_stem.draco.adjacency_complex_construction import layer_triangle_topomesh_construction, \
+from adjacency_complex_construction import layer_triangle_topomesh_construction, \
     layered_tetrahedra_topomesh_construction
 
-from openalea.draco_stem.draco.dual_reconstruction import tetrahedra_dual_triangular_topomesh
+from dual_reconstruction import tetrahedra_dual_triangular_topomesh
 
 
 class DracoMesh(object):

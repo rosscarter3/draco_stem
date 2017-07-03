@@ -1,13 +1,8 @@
-import numpy as np
-from scipy import ndimage as nd
+from property_topomesh import PropertyTopomesh
 
-from scipy.cluster.vq import kmeans, vq
+from property_topomesh_analysis import *
 
-from openalea.container import array_dict, PropertyTopomesh
-
-from openalea.mesh.property_topomesh_analysis import *
-
-from openalea.mesh.utils.intersection_tools import inside_triangle, intersecting_segment, intersecting_triangle
+from intersection_tools import  intersecting_triangle
 
 tetra_triangle_edge_list = np.array([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]])
 tetra_triangle_list = np.array([[0, 1, 2], [0, 1, 3], [0, 2, 3], [1, 2, 3]])
