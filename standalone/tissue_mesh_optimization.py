@@ -24,7 +24,6 @@ from scipy.cluster.vq import vq
 
 from openalea.container import array_dict
 
-from openalea.mesh import PropertyTopomesh
 from openalea.mesh.property_topomesh_analysis import compute_topomesh_property, compute_topomesh_triangle_properties
 from openalea.mesh.property_topomesh_optimization import property_topomesh_vertices_deformation, \
     property_topomesh_edge_flip_optimization
@@ -99,7 +98,7 @@ def optimize_topomesh(input_topomesh, omega_forces={'regularization': 0.00, 'lap
     if cell_vertex_motion:
         image_cell_vertex = deepcopy(kwargs.get("image_cell_vertex", {}))
         for v in image_cell_vertex.keys():
-            image_cell_vertex[v] = image_cell_vertex[v] * np.array(kwargs.get("image_voxelsize", (1.0, 1.0, 1.0)))
+            image_cell_vertex[v] *= np.array(kwargs.get("image_voxelsize", (1.0, 1.0, 1.0)))
             # image_cell_vertex[v] = image_cell_vertex[v]
 
         compute_topomesh_property(topomesh, 'cells', degree=0)
